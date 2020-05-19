@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "create-dev-tables": "babel-node ./app/db/dev/dbConnection createAllTables",
-    "start": "nodemon --watch . --exec babel-node -- index",
+    "start": "node index.js",
     "setup": "npm-run-all -p start create-dev-tables"
   },
   "author": "suchith ponnuru",
