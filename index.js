@@ -1,6 +1,6 @@
 // import express from "express";
 const express = require("express");
-import "babel-polyfill";
+//import "babel-polyfill";
 import cors from "cors";
 import env from "./env";
 import userRoute from "./app/routes/userRoute";
