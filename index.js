@@ -32,7 +32,7 @@ io.on("connection", (socket) => {
 });
 
 
-server.listen(3004).on("listening", () => {
+server.listen(3004 ).on("listening", () => {
   console.log(`🚀 are live on 3004`);
 });
 
