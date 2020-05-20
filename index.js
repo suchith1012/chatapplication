@@ -2,10 +2,15 @@
 const express = require("express");
 //import "babel-polyfill";
 //import cors from "cors";
+const cors = require("cors");
+const env = require("./env");
 //import env from "./env";
-import userRoute from "./app/routes/userRoute";
-import friendRoute from "./app/routes/friendRoute";
-import { addinglist, getlistsocket } from "./app/helpers/global";
+const userRoute = require("./app/routes/userRoute")
+//import userRoute from "./app/routes/userRoute";
+const friendRoute = require("./app/routes/friendRoute")
+//import friendRoute from "./app/routes/friendRoute";
+const { addinglist, getlistsocket } = require("./app/helpers/global");
+//import { addinglist, getlistsocket } from "./app/helpers/global";
 const app = express();
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
